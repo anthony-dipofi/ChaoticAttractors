@@ -167,7 +167,41 @@ def Chua_attractor(init,a,b,c,speed,steps):
 	ax.plot(xs,ys,zs)
 	pl.show()	
 
-def Lorenz_attractor(init,o,p,b,speed,steps):
+def Chua_circuit_attractor(init, a, b, m, speed, steps):
+	xs = np.zeros((steps))
+	ys = np.zeros((steps))
+	zs = np.zeros((steps))
+	xs[0] = init[0]
+	ys[0] = init[1]
+	zs[0] = init[2]
+	def g(x):
+		if(x <= -1):
+			return m[1]*(x + 1) - m[0]
+		elif(x > -1 and x < 1):
+			return m[0]*x
+		elif(x >= -1):
+			return m[1]*(x - 1) + m[0]
+	
+	for i in range(1,steps):
+		x = xs[i-1]
+		y = ys[i-1]
+		z = zs[i-1]
+		dx = a*(y-g(x))
+		dy = x - y - z
+		dz = -b*y
+		xs[i] = x+speed*dx
+		ys[i] = y+speed*dy
+		zs[i] = z+speed*dz
+		
+	fig = pl.figure()
+	ax = Axes3D(fig)
+	ax.plot(xs,ys,zs)
+	pl.show()
+
+def Lorenz_attractor(init, sigma, rho, beta, speed, steps):
+	o = sigma
+	p = rho
+	b = beta
 	xs = np.zeros((steps))
 	ys = np.zeros((steps))
 	zs = np.zeros((steps))
