@@ -39,3 +39,13 @@ Skew_Tent_map(init = 0.5, b = 0.68, steps = 250)
 ```
 
 ![Skew Tent Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Skew_Tent_Map.png)
+
+
+Logistic Map
+
+```
+from attractors import Logistic_map
+Logistic_map(init = 0.5, p = 3.99, steps = 150)
+```
+
+![Logistic Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Logistic_Map.png)
