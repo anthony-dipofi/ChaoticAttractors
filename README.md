@@ -1,7 +1,7 @@
 # ChaoticAttractors
 
 
-A library to simulate the trajectories of a various dynamical systems, built as an exploration of chaotic attractor dynamics. Requires Numpy and Matplotlib.
+A library to simulate trajectories of various systems of differential and difference equations, built primarily for the numerical exploration of chaotic attractor dynamics. Requires Numpy and Matplotlib.
 
 # Examples
 Rabinovich–Fabrikant equations
