@@ -21,16 +21,6 @@ Rossler_attractor(init = (0.1,0.1,0.1), a = 0.35, b = 0.5, c = 12, speed = 0.01,
 
 ![Rossler Attractor](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Rossler_attractor.png)
 
-Lorenz Attractor
-
-```
-from attractors import Lorenz_attractor
-Lorenz_attractor(init = (10,10,10), sigma = 10, rho = 28, beta = 8/3, speed = 0.001, steps = 30000)
-```
-
-![Lorenz Attractor](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Lorenz_attractor.png)
-
-
 Lu Chen Attractor
 
 ```
@@ -88,3 +78,14 @@ Bogdanov_map(init=(0.1,0), epsilon = 0.0000, k = 0.0001, mu = 0.020, steps = 104
 ```
 
 ![Bogdanov Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Bogdanov_Map.png)
+
+
+Lorenz Attractor
+
+```
+from attractors import Lorenz_attractor
+Lorenz_attractor(init = (10,10,10), sigma = 10, rho = 28, beta = 8/3, speed = 0.001, steps = 30000)
+```
+
+![Lorenz Attractor](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Lorenz_attractor.png)
+
