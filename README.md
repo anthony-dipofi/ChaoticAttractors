@@ -31,6 +31,17 @@ Lorenz_attractor(init = (10,10,10), sigma = 10, rho = 28, beta = 8/3, speed = 0.
 ![Lorenz Attractor](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Lorenz_attractor.png)
 
 
+Lu Chen Attractor
+
+```
+from attractors import Lu_Chen_attractor
+Lu_Chen_attractor(init = (0.1, 0.3, -0.5), a = 29, b = 3, c = 22, u = -1, speed = 0.001, steps = 25000) 
+
+```
+
+![Lu Chen Attractor](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Lu_Chen_attractor.png)
+
+
 Skew Tent Map
 
 ```
@@ -58,3 +69,22 @@ GingerBread_map(init = (3.5, 3.5), steps = 250)
 ```
 ![Gingerbread Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/GingerBread_Map.png)
 
+Van der Pol Oscillator
+
+```
+from attractors import VanDerPol_oscillator
+VanDerPol_oscillator(init = (0.5, 0.5), p = 1.614, speed = 0.001, steps = 15250)
+
+```
+![Van der Pol Oscillator](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/VanderPol_Oscillator.png)
+
+
+
+Bogdanov Map
+
+```
+from attractors import Bogdanov_map
+Bogdanov_map(init=(0.1,0), epsilon = 0.0000, k = 0.0001, mu = 0.020, steps = 10450)
+```
+
+![Bogdanov Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Bogdanov_Map.png)
