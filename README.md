@@ -49,3 +49,12 @@ Logistic_map(init = 0.5, p = 3.99, steps = 150)
 ```
 
 ![Logistic Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Logistic_Map.png)
+
+Gingerbread Map
+
+```
+from attractors import GingerBread_map
+GingerBread_map(init = (3.5, 3.5), steps = 250)
+```
+![Gingerbread Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/GingerBread_Map.png)
+
