@@ -1,10 +1,12 @@
 # ChaoticAttractors
 
 
-A simple library to simulate the trajectories of a various chaotic dynamical systems.
+A library to simulate the trajectories of a various dynamical systems, built as an exploration of chaotic attractor dynamics. Requires Numpy and Matplotlib.
+
 # Examples
 Rabinovich–Fabrikant equations
 
+https://en.wikipedia.org/wiki/Rabinovich%E2%80%93Fabrikant_equations
 ```
 from attractors import RabFab_attractor
 RabFab_attractor(init = (-1,0,0.5), a = 1.1, g = 0.87, speed = 0.001, steps = 150000)
@@ -13,6 +15,8 @@ RabFab_attractor(init = (-1,0,0.5), a = 1.1, g = 0.87, speed = 0.001, steps = 15
 ![Rabinovich Fabrikant](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Rabinovich_Fabrikant_oscillator_1.png)
 
 Rossler Attractor
+
+https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor
 
 ```
 from attractors import Rossler_attractor
@@ -23,6 +27,7 @@ Rossler_attractor(init = (0.1,0.1,0.1), a = 0.35, b = 0.5, c = 12, speed = 0.01,
 
 Lu Chen Attractor
 
+https://en.wikipedia.org/wiki/Multiscroll_attractor
 ```
 from attractors import Lu_Chen_attractor
 Lu_Chen_attractor(init = (0.1, 0.3, -0.5), a = 29, b = 3, c = 22, u = -1, speed = 0.001, steps = 25000) 
@@ -34,6 +39,8 @@ Lu_Chen_attractor(init = (0.1, 0.3, -0.5), a = 29, b = 3, c = 22, u = -1, speed 
 
 Skew Tent Map
 
+https://infoscience.epfl.ch/record/52235/files/IC_TECH_REPORT_199704.pdf
+
 ```
 from attractors import Skew_Tent_map
 Skew_Tent_map(init = 0.5, b = 0.68, steps = 250)
@@ -44,6 +51,7 @@ Skew_Tent_map(init = 0.5, b = 0.68, steps = 250)
 
 Logistic Map
 
+https://en.wikipedia.org/wiki/Logistic_map
 ```
 from attractors import Logistic_map
 Logistic_map(init = 0.5, p = 3.99, steps = 150)
@@ -53,6 +61,7 @@ Logistic_map(init = 0.5, p = 3.99, steps = 150)
 
 Gingerbread Map
 
+http://mathworld.wolfram.com/GingerbreadmanMap.html
 ```
 from attractors import GingerBread_map
 GingerBread_map(init = (3.5, 3.5), steps = 250)
@@ -60,6 +69,8 @@ GingerBread_map(init = (3.5, 3.5), steps = 250)
 ![Gingerbread Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/GingerBread_Map.png)
 
 Van der Pol Oscillator
+
+https://arxiv.org/abs/0803.1658
 
 ```
 from attractors import VanDerPol_oscillator
@@ -72,6 +83,8 @@ VanDerPol_oscillator(init = (0.5, 0.5), p = 1.614, speed = 0.001, steps = 15250)
 
 Bogdanov Map
 
+https://arxiv.org/abs/chao-dyn/9402006
+
 ```
 from attractors import Bogdanov_map
 Bogdanov_map(init=(0.1,0), epsilon = 0.0000, k = 0.0001, mu = 0.020, steps = 10450)
@@ -81,6 +94,8 @@ Bogdanov_map(init=(0.1,0), epsilon = 0.0000, k = 0.0001, mu = 0.020, steps = 104
 
 
 Lorenz Attractor
+
+https://en.wikipedia.org/wiki/Lorenz_system
 
 ```
 from attractors import Lorenz_attractor
