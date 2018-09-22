@@ -2,12 +2,12 @@ import numpy as np
 import pylab as pl
 from mpl_toolkits.mplot3d import Axes3D
 
-def VDP_osc(init_x,init_y,p,speed,steps):
+def VanDerPol_oscillator(init,p,speed,steps):
 	
 	xs = np.zeros((steps))
 	ys = np.zeros((steps))
-	xs[0] = init_x
-	ys[0] = init_y
+	xs[0] = init[0]
+	ys[0] = init[1]
 	
 	for i in range(1,steps):
 		x = xs[i-1]
@@ -19,23 +19,6 @@ def VDP_osc(init_x,init_y,p,speed,steps):
 		
 	pl.plot(xs,ys)
 	pl.show()	
-	
-def Westerhoff(init,a,b,c,d,m,F,steps):
-	xs = np.arange(steps)
-	ss = np.zeros((steps))
-	ss[0] = init
-	
-	for i in range(1,steps):
-		s = ss[i-1]
-		v = F-s
-		DM = m*v
-		DB = -b*(v/(1+d*v**2))
-		DC = c*((d*v**3)/(1+d*v**2))
-		ss[i] = s + a*(DM + DB +DC)
-	
-	pl.plot(xs,ss)
-	pl.show()
-	Westerhoff(init,a,b,c,d,m,F,steps)
 	
 def Logistic_map(init,p,steps):
 	xs = np.arange(steps)
@@ -197,6 +180,23 @@ def Chua_circuit_attractor(init, a, b, m, speed, steps):
 	ax = Axes3D(fig)
 	ax.plot(xs,ys,zs)
 	pl.show()
+	
+def Westerhoff(init,a,b,c,d,m,F,steps):
+	xs = np.arange(steps)
+	ss = np.zeros((steps))
+	ss[0] = init
+	
+	for i in range(1,steps):
+		s = ss[i-1]
+		v = F-s
+		DM = m*v
+		DB = -b*(v/(1+d*v**2))
+		DC = c*((d*v**3)/(1+d*v**2))
+		ss[i] = s + a*(DM + DB +DC)
+	
+	pl.plot(xs,ss)
+	pl.show()
+	#Westerhoff(init,a,b,c,d,m,F,steps)
 
 def Lorenz_attractor(init, sigma, rho, beta, speed, steps):
 	o = sigma
