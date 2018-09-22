@@ -1,7 +1,7 @@
-# ChaoticAttractors
+# Chaotic Attractors
 
 
-A library to simulate trajectories of various systems of differential and difference equations, built primarily for the numerical exploration of chaotic attractor dynamics. Requires Numpy and Matplotlib.
+A library to simulate trajectories of various systems of differential and difference equations, built primarily for the purpose of exploring the dynamics of chaotic attractors. Requires Numpy and Matplotlib.
 
 # Examples
 Rabinovich–Fabrikant equations
@@ -13,6 +13,12 @@ RabFab_attractor(init = (-1,0,0.5), a = 1.1, g = 0.87, speed = 0.001, steps = 15
 ```
 
 ![Rabinovich Fabrikant](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Rabinovich_Fabrikant_oscillator_1.png)
+
+```
+RabFab_attractor(init = (-1,0,0.5), a = 1.1, g = 0.87, speed = 0.001, steps = 150000)
+```
+
+![Rabinovich Fabrikant](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Rabinovich_Fabrikant_oscillator_2.png)
 
 Rossler Attractor
 
