@@ -15,7 +15,7 @@ RabFab_attractor(init = (-1,0,0.5), a = 1.1, g = 0.87, speed = 0.001, steps = 15
 ![Rabinovich Fabrikant](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Rabinovich_Fabrikant_oscillator_1.png)
 
 ```
-RabFab_attractor(init = (-1,0,0.5), a = 1.1, g = 0.87, speed = 0.001, steps = 150000)
+RabFab_attractor(init = (-1,0,0.5), a = 0.14, g = 0.1, speed = 0.001, steps = 350000)
 ```
 
 ![Rabinovich Fabrikant](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Rabinovich_Fabrikant_oscillator_2.png)
