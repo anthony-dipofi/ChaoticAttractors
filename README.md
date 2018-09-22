@@ -37,7 +37,6 @@ https://en.wikipedia.org/wiki/Multiscroll_attractor
 ```
 from attractors import Lu_Chen_attractor
 Lu_Chen_attractor(init = (0.1, 0.3, -0.5), a = 29, b = 3, c = 22, u = -1, speed = 0.001, steps = 25000) 
-
 ```
 
 ![Lu Chen Attractor](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Lu_Chen_attractor.png)
@@ -62,8 +61,14 @@ https://en.wikipedia.org/wiki/Logistic_map
 from attractors import Logistic_map
 Logistic_map(init = 0.5, p = 3.99, steps = 150)
 ```
-
 ![Logistic Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Logistic_Map.png)
+
+```
+Logistic_map(init = 0.5, p = 3.75, steps = 300)
+```
+
+
+![Logistic Map](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/Logistic_Map_2.png)
 
 Gingerbread Map
 
@@ -81,7 +86,6 @@ https://arxiv.org/abs/0803.1658
 ```
 from attractors import VanDerPol_oscillator
 VanDerPol_oscillator(init = (0.5, 0.5), p = 1.614, speed = 0.001, steps = 15250)
-
 ```
 ![Van der Pol Oscillator](https://github.com/goolulusaurs/ChaoticAttractors/blob/master/example_images/VanderPol_Oscillator.png)
 
